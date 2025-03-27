@@ -1,0 +1,310 @@
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 14px;
+    color: #333;
+    line-height: 1.8;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 0;
+}
+.section-m1{ 
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #dddcdc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+#navbar li a:hover {
+    color: #007bff;
+}
+#navbar li a.active ::after,
+#navbar li a:hover ::after {
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: #007bff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circular shape */
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #007bff;
+}
+
+/* home page */
+#hero{
+    background-image: url("");
+    height: 90vh;
+    width: 90.5%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#hero h4{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #088178;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+   background: #088178;
+   padding: 12px 30px;
+   border: 0;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.3s ease;
+   background-repeat: no-repeat;
+
+}
+#hero button:hover{
+    background: #007bff;}
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 45px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    padding: 10px 8px 6px 8px;
+    background-color: antiquewhite;
+    display: inline-block;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #28e752;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #56cadf;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #e64b7f;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f5a623;
+}
+#product-1{
+    text-align: center;
+}
+
+/* #product-1 .pro{
+    width: 23%;
+    padding: 10px 20px;
+    min-width: 250px;
+    border: #dddcdc;
+    border-radius: 20px;
+    box-shadow: 20 25px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+} */
+#product-1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+#product-1 .pro{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#product-1 .pro:hover{
+    box-shadow: 10px 10px 45px rgba(70, 62, 221, 0.1);
+}
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product .pro .des span{
+   color: #606063;
+    font-size: 12px;
+}
+#product .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product .pro .des h4{
+    color: #088178;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 7px;
+}
+#product .pro .des button{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #007bff;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #007bff;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product .pro .des button:hover{
+    background: #007bff;
+}
+#product .pro .des button i{
+    font-size: 20px;
+}
+#product .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+#Shoe-details {
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+}
+#Shoe-details img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circular shape */
+}
+/* Align Featured Products Horizontally */
+.pro-container {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center; 
+    gap: 20px;  
+    padding: 20px;
+    overflow-x: auto;  
+    white-space: nowrap; 
+}
+
+.pro {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 220px;  /* Set fixed width */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 0 0 auto; /* Prevent shrinking */
+}
+
+.pro:hover {
+    transform: scale(1.05);
+}
+
+.pro img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pro span {
+    color: gray;
+    font-size: 14px;
+}
+
+.pro h5 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.pro h4 {
+    color: #ff4d00;
+    font-size: 18px;
+}
+
+.pro button {
+    background-color: #ff4d00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pro button:hover {
+    background-color: #e63e00;
+}
