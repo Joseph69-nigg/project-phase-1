@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const productList = document.getElementById("productList");
 
     fetchButton.addEventListener("click", () => {
-        fetch("https://fakestoreapi.com/products") // Replace with your API endpoint
+        fetch("https://fakestoreapi.com/products") 
             .then(response => response.json())
             .then(data => {
-                productList.innerHTML = ""; // Clear previous entries
+                productList.innerHTML = ""; 
                 data.forEach(product => {
                     const productItem = document.createElement("div");
                     productItem.classList.add("product-item");
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function displayProducts(products) {
     const productContainer = document.querySelector(".pro-container");
-    productContainer.innerHTML = ""; // Clear existing content
+    productContainer.innerHTML = ""; 
 
     products.forEach(product => {
         const productCard = document.createElement("div");
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function displayProducts(products) {
     const productContainer = document.querySelector(".pro-container");
-    productContainer.innerHTML = ""; // Clear existing content
+    productContainer.innerHTML = ""; 
 
     products.forEach(product => {
         const productCard = document.createElement("div");

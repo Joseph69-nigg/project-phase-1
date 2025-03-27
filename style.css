@@ -249,19 +249,8 @@ footer li a{
 footer li a:hover{
     color: #007bff;
 }
-#Shoe-details {
-    margin: 20px auto;
-    padding: 10px;
-    width: 50%;
-    background: white;
-    border-radius: 10px;
-}
-#Shoe-details img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Make height equal to width for a perfect circle */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image fills the circular shape */
-}
+
+    
 .des{
     padding: 10px 0;
 }
@@ -349,19 +338,19 @@ footer li a:hover{
     flex-wrap: wrap;
 }
 #productList {
-    display: flex; /* Aligns items in a row */
-    flex-wrap: wrap; /* Wrap if needed */
-    gap: 20px; /* Space between products */
-    justify-content: center; /* Center items */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
     padding: 20px;
-    background: #f8f8f8; /* Light grey background */
+    background: #f8f8f8; 
     border-radius: 10px;
 }
 
 .product-item {
-    background: white; /* Card background */
+    background: white; 
     padding: 15px;
-    width: 250px; /* Width for each product */
+    width: 250px; 
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -369,7 +358,7 @@ footer li a:hover{
 }
 
 .product-item:hover {
-    transform: scale(1.05); /* Hover effect */
+    transform: scale(1.05);
 }
 
 .product-item img {
@@ -394,5 +383,5 @@ footer li a:hover{
 }
 
 .add-to-cart:hover {
-    background: #e65c00; /* Darker on hover */
+    background: #e65c00; 
 }
