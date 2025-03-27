@@ -75,7 +75,7 @@ body{
 
 /* home page */
 #hero{
-    background-image: url("");
+    background-image: url("https://images.unsplash.com/photo-1594734415578-00fc9540929b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
     height: 90vh;
     width: 90.5%;
     background-position: top 25% right 0;
@@ -161,16 +161,12 @@ body{
     text-align: center;
 }
 
-/* #product-1 .pro{
-    width: 23%;
-    padding: 10px 20px;
-    min-width: 250px;
-    border: #dddcdc;
-    border-radius: 20px;
-    box-shadow: 20 25px 30px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-
-} */
+#product-1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 #product-1 .pro img{
     width: 100%;
     border-radius: 20px;
@@ -236,6 +232,23 @@ footer {
     background: #333;
     color: white;
 }
+footer p{
+    margin: 0;  
+    color: white;
+    font-size: 14px;
+}
+footer li{
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+}
+footer li a{
+    color: white;
+    text-decoration: none;
+}
+footer li a:hover{
+    color: #007bff;
+}
 #Shoe-details {
     margin: 20px auto;
     padding: 10px;
@@ -249,17 +262,38 @@ footer {
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image fills the circular shape */
 }
-/* Align Featured Products Horizontally */
-.pro-container {
-    display: flex;
-    flex-direction: row;  
-    justify-content: center; 
-    gap: 20px;  
-    padding: 20px;
-    overflow-x: auto;  
-    white-space: nowrap; 
+.des{
+    padding: 10px 0;
+}
+.des span{
+    color: #606063;
+    font-size: 12px;
+}
+.des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+.des h4{
+    color: #088178;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 7px;
 }
 
+.des button:hover{
+    background: #007bff;
+}
+
+#product .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#product .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
 .pro {
     background: #fff;
     border-radius: 10px;
@@ -307,4 +341,58 @@ footer {
 
 .pro button:hover {
     background-color: #e63e00;
+}
+#admin-control .productList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#productList {
+    display: flex; /* Aligns items in a row */
+    flex-wrap: wrap; /* Wrap if needed */
+    gap: 20px; /* Space between products */
+    justify-content: center; /* Center items */
+    padding: 20px;
+    background: #f8f8f8; /* Light grey background */
+    border-radius: 10px;
+}
+
+.product-item {
+    background: white; /* Card background */
+    padding: 15px;
+    width: 250px; /* Width for each product */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-item h4 {
+    color: #ff6a00;
+    font-size: 18px;
+}
+
+.add-to-cart {
+    background: #ff6a00;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #e65c00; /* Darker on hover */
 }
